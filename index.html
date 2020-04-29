@@ -7,6 +7,7 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>COVID-19 TRACKER</title>
   </head>
   <body onload="brython()">
@@ -14,6 +15,7 @@
       <center>
         <h1>COVID-19 TRACKER</h1>
       </center>
+
       <div class="form-group">
         <input
           type="text"
@@ -27,14 +29,19 @@
           Afiseaza cele mai noi date
         </button>
       </div>
-      <h1>Numarul total</h1>
-      <h2>Cazuri totale: <span id="cases"></span></h2>
-      <h2>vindecati: <span id="vindecati"></span></h2>
-      <h2>decedati: <span id="decedati"></span></h2>
-      <hr />
-      <h1>Numerele din ultima zi</h1>
-      <h2>Cazuri in ultima zi: <span id="cases24"></span></h2>
-      <h2>decedati in ultima zi: <span id="decedati24"></span></h2>
+      <div id="info" style="display: none;">
+        <div>
+          <h1>Numarul total</h1>
+          <h2>Cazuri totale: <span id="cases"></span></h2>
+          <h2>vindecati: <span id="vindecati"></span></h2>
+          <h2>decedati: <span id="decedati"></span></h2>
+        </div>
+        <div>
+          <h1>Numerele din ultima zi</h1>
+          <h2>Cazuri in ultima zi: <span id="cases24"></span></h2>
+          <h2>decedati in ultima zi: <span id="decedati24"></span></h2>
+        </div>
+      </div>
     </div>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.8.8/brython.min.js"

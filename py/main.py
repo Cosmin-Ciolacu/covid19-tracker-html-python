@@ -4,6 +4,7 @@ from browser import ajax
 url = 'https://coronavirus-19-api.herokuapp.com/countries/'
 
 def get_response(req):
+  document['info'].style.display = 'flex'
   console.log('se cauta date')
   import json
   data = json.loads(req.responseText)
