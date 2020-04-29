@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <title>COVID-19 TRACKER</title>
+  </head>
+  <body onload="brython()">
+    <div class="container">
+      <center>
+        <h1>COVID-19 TRACKER</h1>
+      </center>
+      <div class="form-group">
+        <input
+          type="text"
+          id="country"
+          class="form-control"
+          placeholder="Introdu numele tarii in engleza"
+        />
+      </div>
+      <div class="form-group">
+        <button id="cauta" class="btn btn-info btn-block">
+          Afiseaza cele mai noi date
+        </button>
+      </div>
+      <h1>Numarul total</h1>
+      <h2>Cazuri totale: <span id="cases"></span></h2>
+      <h2>vindecati: <span id="vindecati"></span></h2>
+      <h2>decedati: <span id="decedati"></span></h2>
+      <hr />
+      <h1>Numerele din ultima zi</h1>
+      <h2>Cazuri in ultima zi: <span id="cases24"></span></h2>
+      <h2>decedati in ultima zi: <span id="decedati24"></span></h2>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.8.8/brython.min.js"
+      integrity="sha256-o/getzwHeAq4xcWJ350CFg+70KNoYxxdK8ikIp76hIM="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.8.8/brython_stdlib.js"
+      integrity="sha256-Gnrw9tIjrsXcZSCh/wos5Jrpn0bNVNFJuNJI9d71TDs="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./py/main.py" type="text/python" id="script0"></script>
+  </body>
+</html>
