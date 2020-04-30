@@ -3,7 +3,6 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-left: 30px;
 }
 #cases,
 #cases24 {
@@ -16,4 +15,34 @@
 #decedati,
 #decedati24 {
   color: red;
+}
+#all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20;
+  border-right: 5px solid black;
+  padding-right: 20px;
+}
+#today {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20;
+  margin-left: 100px;
+}
+@media (max-width: 700px) {
+  #info {
+    flex-direction: column;
+  }
+  #all {
+    border: none;
+    padding-right: 0;
+  }
+  #today {
+    margin-left: 0;
+    margin-top: 20px;
+  }
 }
